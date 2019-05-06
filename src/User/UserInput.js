@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 // const userInput = (props) => {
 //     return (
@@ -8,14 +8,12 @@ import React, { Component } from 'react';
 //     );
 // }
 
-class UserInput extends  Component {
-    render() {
-        return (
-            <div className="UserInput">
-                <input/>
-            </div>
-        );
-    }
+const UserInput = (props) => {
+    return (
+        <div className="UserInput">
+            <input onChange={props.changed}/>
+        </div>
+    );
 }
 
 export default UserInput;
